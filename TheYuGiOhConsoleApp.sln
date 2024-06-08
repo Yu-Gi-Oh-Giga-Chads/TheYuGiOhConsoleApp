@@ -5,6 +5,14 @@ VisualStudioVersion = 17.8.34511.84
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheYuGiOhConsoleApp", "TheYuGiOhConsoleApp\TheYuGiOhConsoleApp.csproj", "{15B471C9-1D74-43E4-A8DB-3E14E55AB09C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessLayer", "BusinessLayer\BusinessLayer.csproj", "{8AE2C2CD-551E-4180-B5CE-9EBEF5F5D718}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataLayer", "DataLayer\DataLayer.csproj", "{0F1B51E8-3510-4BCA-8D8A-EAB9B7F51D7C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PresentationLayer", "PresentationLayer\PresentationLayer.csproj", "{4B86608B-9244-4F4D-8F6E-C85D6AA29063}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceLayer", "ServiceLayer\ServiceLayer.csproj", "{5E426BD2-5D90-4C14-9594-CE392FFA5A99}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +23,22 @@ Global
 		{15B471C9-1D74-43E4-A8DB-3E14E55AB09C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{15B471C9-1D74-43E4-A8DB-3E14E55AB09C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{15B471C9-1D74-43E4-A8DB-3E14E55AB09C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8AE2C2CD-551E-4180-B5CE-9EBEF5F5D718}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8AE2C2CD-551E-4180-B5CE-9EBEF5F5D718}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8AE2C2CD-551E-4180-B5CE-9EBEF5F5D718}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8AE2C2CD-551E-4180-B5CE-9EBEF5F5D718}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0F1B51E8-3510-4BCA-8D8A-EAB9B7F51D7C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F1B51E8-3510-4BCA-8D8A-EAB9B7F51D7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F1B51E8-3510-4BCA-8D8A-EAB9B7F51D7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F1B51E8-3510-4BCA-8D8A-EAB9B7F51D7C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4B86608B-9244-4F4D-8F6E-C85D6AA29063}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4B86608B-9244-4F4D-8F6E-C85D6AA29063}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4B86608B-9244-4F4D-8F6E-C85D6AA29063}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4B86608B-9244-4F4D-8F6E-C85D6AA29063}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E426BD2-5D90-4C14-9594-CE392FFA5A99}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E426BD2-5D90-4C14-9594-CE392FFA5A99}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E426BD2-5D90-4C14-9594-CE392FFA5A99}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E426BD2-5D90-4C14-9594-CE392FFA5A99}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
