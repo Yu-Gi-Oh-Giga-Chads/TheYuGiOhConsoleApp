@@ -25,7 +25,7 @@ namespace TheYuGiOhConsoleApp_Tests.PresentationLayer
             string testResult = cardMenu.GetCatdText();
             string firstLine = "";
             int i = 0;
-            while (testResult[i].Equals('\n')!)
+            while (testResult[i] != '\n')
             {
                 firstLine += testResult[i]; 
                 i++; 
@@ -33,7 +33,7 @@ namespace TheYuGiOhConsoleApp_Tests.PresentationLayer
             int expectedFirstLineLength = Console.WindowWidth - 14;
 
             //Assert
-            Assert.AreEqual(firstLine.Length, expectedFirstLineLength, "GetCardText does not break the lines properly.");
+            Assert.That(firstLine.Length, Is.EqualTo(expectedFirstLineLength), "GetCardText does not break the lines properly.");
         }
 
         [Test]

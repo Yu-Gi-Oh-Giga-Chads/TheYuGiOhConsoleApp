@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using BusinessLayer;
+using Microsoft.EntityFrameworkCore.Diagnostics;
 
 namespace DataLayer
 {
@@ -12,9 +13,14 @@ namespace DataLayer
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.EnableSensitiveDataLogging();
-            optionsBuilder.UseSqlServer(@"Server=DANI\SQLEXPRESS;Database=TheYGOConsoleDatabase;Trusted_Connection=True;TrustServerCertificate=True;");
+            if (!optionsBuilder.IsConfigured)
+            {
+                optionsBuilder.EnableSensitiveDataLogging();
+                optionsBuilder.UseSqlServer(@"Server=DANI\SQLEXPRESS;Database=TheYGOConsoleDatabase;Trusted_Connection=True;TrustServerCertificate=True;")
+                                    .ConfigureWarnings(warnings => warnings.Ignore(InMemoryEventId.TransactionIgnoredWarning));
+            }
         }
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
