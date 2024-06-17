@@ -42,7 +42,7 @@ $$    $$/ $$    $$ |$$ |      $$    $$ |      / $$   |$$ |  $$ |$$ |    $$    $$
             return SelectedIndex;
         }
 
-        private string[] GetOptions()
+        public string[] GetOptions()
         {
             cardText = GetCatdText();
             string cardType = Card.FrameType;
@@ -57,7 +57,7 @@ $$    $$/ $$    $$ |$$ |      $$    $$ |      / $$   |$$ |  $$ |$$ |    $$    $$
             return MonsterOptions();
         }
 
-        private string[] MonsterOptions()
+        public string[] MonsterOptions()
         {
             return [
                 $"Id: {Card.CardId}",
@@ -73,7 +73,7 @@ $$    $$/ $$    $$ |$$ |      $$    $$ |      / $$   |$$ |  $$ |$$ |    $$    $$
                 $"Back"
             ];
         }
-        private string[] SpellOptions()
+        public string[] SpellOptions()
         {
             return [
                 $"Id: {Card.CardId}",
@@ -85,7 +85,7 @@ $$    $$/ $$    $$ |$$ |      $$    $$ |      / $$   |$$ |  $$ |$$ |    $$    $$
                 $"Back"
             ];
         }
-        private string[] TrapOptions()
+        public string[] TrapOptions()
         {
             return [
                 $"Id: {Card.CardId}",
@@ -97,7 +97,7 @@ $$    $$/ $$    $$ |$$ |      $$    $$ |      / $$   |$$ |  $$ |$$ |    $$    $$
                 $"Back"
             ];
         }
-        private string GetCatdText()
+        public string GetCatdText()
         {
             string cardEffect = Card.Desc;
 
